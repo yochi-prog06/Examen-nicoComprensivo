@@ -9,8 +9,13 @@ public class Alimento extends Producto {
         super(codigo, nombre, precioBase, stock);
     }
 
+    public String getTipo() {
+        return "Alimento";
+    }
+
+    @Override
     public void calcularPrecioFinal() {
         this.precioFinal = getPrecioBase() + 0.05; // Aplicar un aumento del 10%
-
     }
+
 }

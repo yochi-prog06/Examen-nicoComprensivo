@@ -13,4 +13,7 @@ public class Bebida extends Producto {
         this.precioFinal = getPrecioBase() + 0.10; // Aplicar un aumento del 10%
     }
 
+    public String getTipo() {
+        return "Bebida";
+    }
 }

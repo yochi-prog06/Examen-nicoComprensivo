@@ -1,6 +1,6 @@
 package CafeCentral.model;
 
-public class Producto {
+public abstract class Producto {
 
     private final String codigo;
     private String nombre;
@@ -20,21 +20,22 @@ public class Producto {
         this.stock = stock;
     }
 
-    @Override
-    public void calcularPrecioFinal(){}
 
-    public void reducirStock(int cantidad){
-        if(cantidad < 0){
+    public abstract void calcularPrecioFinal();
+
+    public void reducirStock(int cantidad) {
+        if (cantidad < 0) {
             throw new IllegalArgumentException("La cantidad a reducir no puede ser negativa");
         }
-        if(cantidad > stock){
+        if (cantidad > stock) {
             throw new IllegalArgumentException("No hay suficiente stock para reducir la cantidad solicitada");
         }
         this.stock -= cantidad;
     }
 
-    public String getTipo(){}
+    public abstract String getTipo();
 
+    public String getCodigo() {return codigo;}
     public double getPrecioBase() {
         return precioBase;
     }
