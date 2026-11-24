@@ -2,6 +2,7 @@ package CafeCentral;
 
 import CafeCentral.model.Alimento;
 import CafeCentral.model.Producto;
+import CafeCentral.model.ProductoFactory;
 import CafeCentral.ventana.VentanaCafeteria;
 
 import java.util.ArrayList;
@@ -12,8 +13,8 @@ public class Main {
     public static void main(String[] args) {
 
 
-        List<Alimento> productos = new ArrayList<>();
-        productos = new Alimento("A01","Coca Cola", 1000, 5);
+       ProductoFactory pf;
+       pf.crear("B01","Coca Cola","BEBIDA",1000,4);
 
 
         VentanaCafeteria ventana = new VentanaCafeteria();
