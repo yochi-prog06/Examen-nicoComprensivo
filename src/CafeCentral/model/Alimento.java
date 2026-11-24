@@ -5,7 +5,7 @@ public class Alimento extends Producto {
     private double precioFinal;
 
 
-    public Alimento(String codigo, String nombre, double precioBase, int stock) {
+    public Alimento(String codigo, String nombre, String tipo, double precioBase, int stock) {
         super(codigo, nombre, precioBase, stock);
     }
 

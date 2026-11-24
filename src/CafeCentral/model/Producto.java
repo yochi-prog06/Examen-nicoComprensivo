@@ -6,8 +6,9 @@ public abstract class Producto {
     private String nombre;
     private double precioBase;
     private int stock;
+    private String tipo;
 
-    public Producto(String codigo, String nombre, double precioBase, int stock) {
+    public Producto(String codigo, String nombre, String tipo, double precioBase, int stock) {
         if(precioBase < 0){
             throw new IllegalArgumentException("El precio base no puede ser negativo");
         }
@@ -18,6 +19,7 @@ public abstract class Producto {
         this.nombre = nombre;
         this.precioBase = precioBase;
         this.stock = stock;
+        this.tipo = tipo;
     }
 
 

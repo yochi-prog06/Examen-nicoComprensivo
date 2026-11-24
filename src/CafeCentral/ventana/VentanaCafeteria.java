@@ -25,6 +25,11 @@ public class VentanaCafeteria extends JFrame {
         setLocationRelativeTo(null);
         setLayout(null);
 
+        JFrame Principal = new JFrame("CafeCentral");
+        JPanel panel = new JPanel();
+
+
+
         btnRegistrarProducto = new JButton("Registrar Producto");
         btnRegistrarProducto.setBounds(100, 50, 200, 30);
         add(btnRegistrarProducto);

@@ -4,7 +4,7 @@ public class Bebida extends Producto {
 
     private double precioFinal;
 
-    public Bebida(String codigo, String nombre, double precioBase, int stock) {
+    public Bebida(String codigo, String nombre, String tipo, double precioBase, int stock) {
         super(codigo, nombre, precioBase, stock);
     }
 
