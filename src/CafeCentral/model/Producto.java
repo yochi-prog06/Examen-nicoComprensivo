@@ -35,10 +35,10 @@ public abstract class Producto {
         this.stock -= cantidad;
     }
 
+    public String getNombre() {return nombre;}
+    public void setNombre(String nombre) {}
     public abstract String getTipo();
-
     public String getCodigo() {return codigo;}
-    public double getPrecioBase() {
-        return precioBase;
-    }
+    public double getPrecioBase() {return precioBase;}
+    public int getStock() {return stock;}
 }
